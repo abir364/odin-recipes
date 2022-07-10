@@ -1,0 +1,80 @@
+* {
+    font-family: "Courier New", "Lucida Console", sans-serif;
+    background-color: rgb(218, 240, 240);
+}
+
+a {
+    display: block;
+    color: hsl(345, 100%, 70%);
+    text-indent: 1em;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 6px auto;
+    padding: 1px auto;
+}
+
+a:hover {
+    color: hsl(345, 100%, 40%);
+    text-indent: 2rem;
+    font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: hsl(345, 100%, 70%);;
+}
+
+h2 {
+    font-size: 30px;
+    color: hsl(345, 100%, 70%);
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: hsl(345, 100%, 70%); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+img {
+    height: 500px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+  background-color: hsla(345, 100%, 85%, 0.623);
+  border: 10px;
+  padding: 10px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #c45672 #ea5d8e;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ea5d8e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #c45672;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+  }
